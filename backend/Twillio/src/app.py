@@ -1,7 +1,5 @@
 from helper.openai_api import text_complition
-from helper.twilio_api import send_message
-
-
+from helper.twilio_api import send_messag
 from flask import Flask, request
 from dotenv import load_dotenv 
 load_dotenv()
@@ -9,9 +7,9 @@ load_dotenv()
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/handle_data', methods=['POST'])
 def home():
-    return 'Successfully Working!'
+    projectpath = request.form['projectFilepath']
 print('oye0')
 
 # @app.route('/twilio/receiveMessage', methods=['POST'])

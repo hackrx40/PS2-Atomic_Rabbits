@@ -9,7 +9,7 @@ load_dotenv()
 openai.api_key = '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'
 
 
-def text_complition(prompt: str) -> dict:
+def text_complition(name: str,health_problem :str)-> dict:
     '''
     Call Openai API for text completion
 
@@ -20,11 +20,10 @@ def text_complition(prompt: str) -> dict:
         - dict
     '''
     try:
-        print(prompt)
         print("\n")
         response = openai.Completion.create(
             model='text-davinci-003',
-            prompt=f'Que-{prompt}\nAns - ',
+            prompt=f'You are a professional writer and you write headers in Hinglish language for notifications that send on mobile phone.  write notification on topic diabetes , which are engaging, little bit of clickbait, and high chance user clicks on it. Add a bit of personalization for {name} who he is suffering from {health_problem} to increase conversion in notification as well. Keep it short, and crisp. Give only one with emoji within 10 words\nAns - ',
             temperature=0.2,
             max_tokens=2500,
             top_p=1,
