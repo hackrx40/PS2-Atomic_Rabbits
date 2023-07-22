@@ -9,6 +9,7 @@ texts = [{"id": 2001,"phone_number": "whatsapp:+916386098082","name": "Aryan","h
         {"id": 2002,"phone_number": "whatsapp:+916386098082","name": "Aman","health_condition":"Thyroid"}]
 
 
+
 @app.route('/')
 def home():
     return 'Successfully Working!'

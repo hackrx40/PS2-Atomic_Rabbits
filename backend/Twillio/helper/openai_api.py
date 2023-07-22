@@ -41,3 +41,24 @@ def text_complition(name: str, health_problem: str) -> dict:
             'response': ''
         }
 
+def text_complete(name:str):
+    try:
+        response = openai.Completion.create(
+            model='text-davinci-003',
+            prompt=f'Write an article for personalised for {name} around 500 words. \nAns - ',
+            temperature=0.9,
+            max_tokens=2500,
+            top_p=1,
+            frequency_penalty=0,
+            presence_penalty=0,
+            stop=['Ans -']
+        )
+        return {
+            'status': 1,
+            'response': response['choices'][0]['text']
+        }
+    except:
+        return {
+            'status': 0,
+            'response': ''
+        }
