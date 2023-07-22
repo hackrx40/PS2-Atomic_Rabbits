@@ -1,0 +1,189 @@
+.newsletter-list{
+    display: grid;
+    gap: 40px 28px;
+    /* grid-template-rows: 1fr; */
+    /* grid-template-columns: repeat(3, 1fr);  */
+    height:400px;
+    overflow-y: scroll;
+  }
+
+  .newsletter-list::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .newsletter-list::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px var(--verdigris); 
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  .newsletter-list::-webkit-scrollbar-thumb {
+    background: var(--verdigris); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .newsletter-list::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-green); 
+  }
+
+  .profile{
+    /* border-radius: 100%;
+    border; */
+    padding: 10px;
+    border-radius: 100%;
+    
+    background-image: linear-gradient(var(--verdigris),var(--dark-green));
+  }
+  .profile img{
+    border-radius: 100%;
+    object-fit: contain;
+    height: 300px;
+  }
+
+
+  .services-list {
+    display: grid;
+    gap: 30px 30px;
+    grid-template-columns: repeat(2,1fr);
+    background-image: none;
+    /* box-shadow: var(--shadow-1); */
+  }
+  
+  .service-card { 
+    text-align: center;
+    background-color: var(--black); 
+    border-radius: var(--radius-12);
+    padding-block: 60px 30px;
+    padding-inline: 25px;
+    /* margin-block-start: -60px; */
+}
+  
+  .service-card .card-icon,
+  .btn-circle {
+    max-width: max-content;
+    margin-inline: auto;
+  }
+  
+  .service-card .card-icon { margin-block-end: 25px;}
+  
+  .service-card .card-text { margin-block: 20px 15px; }
+  
+  .service-card .btn-circle {
+    color: var(--verdigris);
+    font-size: 2rem;
+    padding: 18px;
+    border-radius: var(--radius-circle);
+    box-shadow: var(--shadow-2);
+    transition: var(--transition-1);
+  }
+  
+  .service-card .btn-circle:is(:hover, :focus-visible) {
+    background-color: var(--verdigris);
+    color: var(--white);
+  }
+
+  .monitor-table, .points-table{
+    width: 100%;
+    border: 1px solid var(--verdigris);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .monitor-table td{
+    padding: 10px;
+  }
+
+  .monitor-table tr td:first-child{
+    /* border: 1px solid var(--verdigris); */
+    width: 45px;
+    /* border-radius: 10px; */
+  }
+
+  .claim-rewards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    border: 1px solid var(--verdigris);
+    border-radius: 10px;
+    padding: 10px;
+    overflow-y: auto;
+    height:200px;
+  }
+
+  .claim-rewards::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .claim-rewards::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px var(--verdigris); 
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  .claim-rewards::-webkit-scrollbar-thumb {
+    background: var(--verdigris); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .claim-rewards::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-green); 
+  }
+
+  .claim-rewards button{
+    color: var(--white);
+    background-color: var(--dark-green);
+    padding: 10px;
+    border-radius: 5px;
+    /* height: 79px; */
+
+  }
+
+  .claim-rewards button:disabled{
+    background-color: var(--eerie-black);
+    cursor:not-allowed;
+  }
+
+  .claim-rewards button:hover{
+    background-color: var(--verdigris);
+  }
+
+  .reward-price{
+    border: 2px solid white;
+    width: 55px;
+    padding: 5px;
+    font-size: 2.5rem;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 100%;
+  }
+
+  .goals{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+  }
+
+  .goals-progress-bar{
+    width: 100%;
+    background-color: white;
+  }
+
+  .goals-progress-bar, .goals-progress{
+    border-radius: 10px;
+    height: 15px;
+  }
+
+  .goals-progress{
+    background-image: linear-gradient(var(--verdigris),var(--dark-green));
+  }
+
+  .blog{
+    margin-top: 100px;
+  }

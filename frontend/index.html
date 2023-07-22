@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>HealthGenie</title>
+  <meta name="title" content="HealthGenie - Profile">
+  <meta name="description" content="This is a madical html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/fulllogo-darkmode.png" id="logo-img" width="300" height="46" alt="HeathGenie">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/fulllogo-darkmode.png" width="90" height="46" alt="HeathGenie">
+          </a>
+
+          <button class="nav-close-btn" aria-label="clsoe menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <a href="#" class="btn has-before title-md">Login</a>
+
+      <a href="#" class="btn has-before title-md" style="width:70;height:70;border-radius:100%;padding: 15px;" onclick="light_dark_mode()">
+        <ion-icon id="mode" name="sunny-outline"></ion-icon>
+      </a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" style="background-image: url('./assets/images/hero-bg.png')" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            
+
+            <h1 class="headline-lg hero-title" data-reveal="left">
+              HealthGenie
+            </h1>
+
+            <p class="hero-subtitle has-before" data-reveal="left">Your Personalized AI Health Care Companion</p>
+
+          </div>
+
+          <figure class="hero-banner" data-reveal="right">
+            <img src="./assets/images/robot-reading.png" width="590" height="517" loading="eager" alt="hero banner"
+              class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="service" aria-label="service">
+        <div class="container">
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./assets/images/news.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="headline-sm card-title">
+                  <a href="#">Personalized Newsletters</a>
+                </h3>
+
+                <p class="card-text">
+                  Curated health updates tailored just for you.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./assets/images/notification.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="headline-sm card-title">
+                  <a href="#">Custom Notifications</a>
+                </h3>
+
+                <p class="card-text">
+                  Get real-time alerts based on your health goals.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./assets/images/track.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="headline-sm card-title">
+                  <a href="#">Tracking System</a>
+                </h3>
+
+                <p class="card-text">
+                  Monitor your health progress and receive personalized insights.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./assets/images/rewards.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="headline-sm card-title">
+                  <a href="#">Exciting Rewards</a>
+                </h3>
+
+                <p class="card-text">
+                  Unlock exclusive benefits and incentives for achieving your health milestones.
+                </p>
+
+                <!-- <button class="btn-circle" aria-label="read more about Orthopedics">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button> -->
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" aria-labelledby="about-label">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="headline-md" id="about-label" data-reveal="left">About Us</p>
+
+            <p class="section-text" data-reveal="left">
+              HealthGenie is a transformative solution that utilizes generative AI to deliver personalized notifications and newsletters. By leveraging user profiles, health data, and contextual information, it inspires positive health behaviors, fosters engagement, and sets new standards for personalization in the health-tech industry. Additionally, we track and monitor our customers' health, providing them with a roadmap to address any health concerns with the help of our top doctors and verified sources.
+            </p>
+
+            <!-- <ul class="tab-list" data-reveal="left">
+
+              <li>
+                <button class="tab-btn active">Vision</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Mission</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Strategy</button>
+              </li>
+
+            </ul> -->
+
+            <!-- <p class="section-text" data-reveal="left">
+              In addition to delivering personalized content, HealthGenie goes beyond traditional approaches. We actively track and monitor our customers' health, utilizing cutting-edge technology to ensure their well-being. Our team of top doctors and verified sources work collaboratively to provide a comprehensive roadmap to address any health concerns identified. With our expert guidance, users can take proactive steps towards a healthier life.
+            </p> -->
+
+            <!-- <p class="tab-text" data-reveal="left">
+              2
+            </p>
+
+            <p class="tab-text" data-reveal="left">
+              3
+            </p> -->
+
+            <div class="wrapper">
+
+              <ul class="about-list">
+
+                <li class="about-item" data-reveal="left">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                  <span class="span">Privacy and Security</span>
+                </li>
+
+                <li class="about-item" data-reveal="left">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                  <span class="span">Ethical Considerations</span>
+                </li>
+
+                <li class="about-item" data-reveal="left">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                  <span class="span">Verified Sources</span>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+          <figure class="about-banner" data-reveal="right">
+            <img src="./assets/images/health.png" width="554" height="678" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" aria-labelledby="blog-label">
+        <div class="container">
+
+          <h2 class="section-title headline-md text-center" data-reveal="bottom">Our Top Newsletters</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card has-before has-after" data-reveal="bottom">
+
+                <div class="meta-wrapper">
+
+                </div>
+
+                <h3 class="headline-sm card-title">Could intermittent fasting reduce breast cancer</h3>
+
+                <time class="title-sm date" datetime="2022-01-28">28 January, 2022</time>
+
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                  labore et dolore magna aliquyam erat
+                </p>
+
+                <a href="#" class="btn-text title-lg">Read More</a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card has-before has-after" data-reveal="bottom">
+
+                <div class="meta-wrapper">
+
+                </div>
+
+                <h3 class="headline-sm card-title">Give children more autonomy during the pandemic</h3>
+
+                <time class="title-sm date" datetime="2022-01-28">28 January, 2022</time>
+
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                  labore et dolore magna aliquyam erat
+                </p>
+
+                <a href="#" class="btn-text title-lg">Read More</a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card has-before has-after" data-reveal="bottom">
+
+                <div class="meta-wrapper">
+
+                </div>
+
+                <h3 class="headline-sm card-title">How do binge eating and drinking impact the liver?</h3>
+
+                <time class="title-sm date" datetime="2022-01-28">28 January, 2022</time>
+
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                  labore et dolore magna aliquyam erat
+                </p>
+
+                <a href="#" class="btn-text title-lg">Read More</a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+    <div class="container">
+
+      <div class="section footer-top">
+
+        <div class="footer-list" data-reveal="bottom">
+
+          <p class="headline-sm footer-list-title">About Us</p>
+
+          <p class="text">
+            Your personalized health companion powered by AI, delivering tailored notifications, newsletters, and expert guidance for a healthier life.
+          </p>
+
+        </div>
+
+        <ul class="footer-list" data-reveal="bottom">
+
+          <li>
+            <p class="headline-sm footer-list-title">Email</p>
+          </li>
+          <li class="contact-item">
+
+            <div class="item-icon">
+              <ion-icon name="mail-open-outline"></ion-icon>
+            </div>
+
+            <div>
+              <p>
+                <a href="mailto:healthgenie.support@gmail.com" class="contact-link">healthgenie.support@gmail.com</a>
+              </p>
+
+            </div>
+
+          </li>
+
+        </ul>
+
+        <ul class="footer-list" data-reveal="bottom">
+
+          <li>
+            <p class="headline-sm footer-list-title">Telephone</p>
+          </li>
+
+          <li class="contact-item">
+
+            <div class="item-icon">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <div>
+              <p>
+                <a href="tel:0029129102320" class="contact-link">9876543210</a>
+              </p>
+
+            </div>
+
+          </li>
+
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="text copyright">
+          &copy; HealthGenie 2023 | All Rights Reserved by Atomic Rabbits
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-google"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="btn back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

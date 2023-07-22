@@ -99,6 +99,21 @@ function light_dark_mode() {
   }
 }
 
+function RewardLoad(){
+  var button = document.getElementsByClassName("reward");
+  var price = document.getElementsByClassName("reward-price");
+  var points = 20;
+
+  for (var i = 0; i < button.length; i++) {
+    if (price[i]<=points){
+      button[i].setAttribute("disabled","false");
+    }
+    else{
+      button[i].setAttribute("disabled","true");
+    }
+  }
+}
+
 window.addEventListener("scroll", revealElementOnScroll);
 
 window.addEventListener("load", revealElementOnScroll);
