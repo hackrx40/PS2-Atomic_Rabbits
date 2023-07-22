@@ -41,11 +41,11 @@ def text_complition(name: str, health_problem: str) -> dict:
             'response': ''
         }
 
-def text_complete(name:str):
+def text_complete(name:str,health_problem: str,title: str):
     try:
         response = openai.Completion.create(
             model='text-davinci-003',
-            prompt=f'Write an article for personalised for {name} around 500 words. \nAns - ',
+            prompt=f'Que -Write an article personalised for {name} who has {health_problem} in around 500 words who has came to your website clicking on the link - {title}. This is written by Bajaj Finanse. \nAns - ',
             temperature=0.9,
             max_tokens=2500,
             top_p=1,
@@ -58,6 +58,7 @@ def text_complete(name:str):
             'response': response['choices'][0]['text']
         }
     except:
+        print("No article is printed")
         return {
             'status': 0,
             'response': ''
